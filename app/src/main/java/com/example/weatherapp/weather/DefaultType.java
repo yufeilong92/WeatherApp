@@ -3,6 +3,7 @@ package com.example.weatherapp.weather;
 import android.animation.Animator;
 import android.content.Context;
 import android.graphics.Canvas;
+import android.graphics.Color;
 
 /**
  * 默认动态天气

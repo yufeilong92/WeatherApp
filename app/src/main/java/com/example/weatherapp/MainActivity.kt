@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         btn_select_weather.setOnClickListener {
             previewDynamicWeather()
         }
+        btn_start.setOnClickListener { finish() }
     }
 
     override fun onResume() {
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         super.onDestroy()
-        dynamicWeatherView.onPause()
+        dynamicWeatherView.onDestroy()
     }
 
     private fun previewDynamicWeather() {
